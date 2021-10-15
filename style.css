@@ -1,0 +1,25 @@
+.canvas {
+  display: flex;
+  flex-wrap: wrap;
+  width: 800 px;
+}
+
+.square {
+  height: 20px;
+  width: 20px;
+  border: 1px solid black;
+}
+.canvas {
+  display: grid;
+  grid-template-columns: repeat(20, 20px);
+  grid-template-rows: repeat(20, 20px);
+  align-content: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.square {
+  height: 20px;
+  width: 20px;
+  border: 1px solid black;
+}
