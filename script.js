@@ -9,3 +9,9 @@ function createBoard(drawingBoard) {
 }
 
 createBoard(drawingBoard);
+
+const color = document.querySelector("input");
+
+color.oninput = function () {
+  console.log(color.value);
+};
