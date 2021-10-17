@@ -13,6 +13,8 @@ function createBoard(drawingBoard) {
   }
 }
 createBoard(drawingBoard);
+draw.classList.add("buttonPressed");
+
 const square = document.querySelectorAll(".square");
 
 square.forEach((e) => {
@@ -20,15 +22,14 @@ square.forEach((e) => {
     if (paintOrErase) {
       e.style.backgroundColor = currentColor.value;
     } else {
-      console.log("erase");
+      e.style.backgroundColor = "white";
     }
   };
 });
 
 reset.onclick = function () {
   square.forEach((e) => {
-    element = document.styleSheets[0].cssRules[0].style;
-    element.removeProperty("backgroundColor");
+    e.style.backgroundColor = "white";
   });
 };
 
