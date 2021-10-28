@@ -99,3 +99,11 @@ button:active:after {
   top: -2px;
   left: -2px;
 }
+
+.newSVG {
+  display: grid;
+  grid-template-columns: repeat(20, 20px);
+  grid-template-rows: repeat(20, 20px);
+  align-content: center;
+  justify-content: center;
+  padding: 10px;
